@@ -7,12 +7,17 @@ void realroots()
     double root1 = (-::b+sqrt(::D))/(2*::a);
     double root2 = (-::b-sqrt(::D))/(2*::a);
     cout<<"The required roots of the equation : "
-        <<::a<<"x^2"<<"+("<<::b<<"x"<<")+("<<::c<<")"
+        <<::a<<"x^2"<<"+("<<::b<<"x"<<")+("<<::c<<")"<<" = 0 "
         <<"\n are : "<<root1 <<" & "<<root2; 
 }
 void complexroots()
 {
-   cout<<"The roots of this equation will be complex. We will add the feature to calculate them soon!\n";
+    double realroot = -::b/(2*::a);
+   double complexroot1 = sqrt(-::D)/(2*::a);
+    double complexroot2 = (-sqrt(-::D))/(2*::a);
+    cout<<"The required roots of the equation : "
+        <<::a<<"x^2"<<"+("<<::b<<"x"<<")+("<<::c<<")"
+        <<"\n are : "<<realroot <<"+("<< complexroot1<<"i)" <<" & "<<realroot <<"+(" <<complexroot2<<"i)";
 }
 int main()
 {
